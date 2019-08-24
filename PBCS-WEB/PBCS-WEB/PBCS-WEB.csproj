@@ -46,9 +46,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,6 +123,34 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="frmExpenseCreate.aspx.cs">
+      <DependentUpon>frmExpenseCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmExpenseCreate.aspx.designer.cs">
+      <DependentUpon>frmExpenseCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenseEdit.aspx.cs">
+      <DependentUpon>frmExpenseEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmExpenseEdit.aspx.designer.cs">
+      <DependentUpon>frmExpenseEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncomeCreate.aspx.cs">
+      <DependentUpon>frmIncomeCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIncomeCreate.aspx.designer.cs">
+      <DependentUpon>frmIncomeCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncomeEdit.aspx.cs">
+      <DependentUpon>frmIncomeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIncomeEdit.aspx.designer.cs">
+      <DependentUpon>frmIncomeEdit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,10 +158,52 @@
     <Compile Include="frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu.aspx.cs">
+      <DependentUpon>frmMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMenu.aspx.designer.cs">
+      <DependentUpon>frmMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaintenance.aspx.cs">
+      <DependentUpon>frmMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMaintenance.aspx.designer.cs">
+      <DependentUpon>frmMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserCreate.aspx.cs">
+      <DependentUpon>frmUserCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUserCreate.aspx.designer.cs">
+      <DependentUpon>frmUserCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmWelcome.aspx.cs">
+      <DependentUpon>frmWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmWelcome.aspx.designer.cs">
+      <DependentUpon>frmWelcome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmUserEdit.aspx.cs">
+      <DependentUpon>frmUserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUserEdit.aspx.designer.cs">
+      <DependentUpon>frmUserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -140,11 +212,20 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmExpenseCreate.aspx" />
+    <Content Include="frmExpenseEdit.aspx" />
+    <Content Include="frmIncomeCreate.aspx" />
+    <Content Include="frmIncomeEdit.aspx" />
     <Content Include="frmLogin.aspx" />
+    <Content Include="frmMenu.aspx" />
+    <Content Include="frmMaintenance.aspx" />
+    <Content Include="frmUserCreate.aspx" />
+    <Content Include="frmWelcome.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="frmUserEdit.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -156,6 +237,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="style.css" />
+    <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -170,6 +253,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Site3.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

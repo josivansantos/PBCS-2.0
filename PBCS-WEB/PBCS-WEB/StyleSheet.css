@@ -1,0 +1,34 @@
+﻿body {
+    font-family: verdana;
+}
+
+#header {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+#nav {
+    line-height: 40px;
+    color: black !important;
+    background-color: #eeeeee;
+    height: 300px;
+    width: 150px;
+    float: left;
+    padding: 5px;
+}
+
+#section {
+    width: 750px;
+    float: left;
+    padding: 10px;
+}
+
+#footer {
+    background-color: gold;
+    color: black;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+}
